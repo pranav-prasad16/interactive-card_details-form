@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Grotesk">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="split left">
+    
+    <!-- <h2>left split</h2> -->
+    <div class="centered">
+      <!-- <p>Some text.</p> -->
+    </div>
+  </div>
+  
+  <div id="box1">
+    <svg id="logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+    <div id="container">
+      <p id="display-num">0000 0000 0000 0000</p>
+      <span id="display-name">JANE APPLESEED</span>
+      <span id="display-date">00/00</span>
+    </div>
+  </div>
+
+  <div id="box2">
+    <p id="display-cvc">000</p>
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+      <div id="form">
+        <label for="holder_name" id="holder_name">CARDHOLDER NAME</label><br><br>
+        <input type="text" id="holder-name" placeholder="e.g. Jane Appleseed"><br><br><br>
+        <label for="holder_number" id="holder_number">CARD NUMBER</label><br><br>
+        <input type="text" id="card-num" placeholder="e.g. 1234 5678 9123 0000"><br><br><br>
+        <div id="inner-container">
+          <label for="date" id="holder_date">EXP. DATE (MM/YY)</label>
+          <label for="cvc" id="holder_cvc">CVC</label><br><br>
+          <input type="text" id="exp-month" placeholder="MM">
+          <input type="text" id="exp-year" placeholder="YY">
+          <input type="text" id="cvc-num" placeholder="e.g. 123"><br><br><br><br>
+          <button id="btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  <div class="attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Pranav</a>.</span>
+  </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

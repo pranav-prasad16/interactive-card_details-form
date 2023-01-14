@@ -1,0 +1,222 @@
+/* Split the screen in half */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+
+p{
+  /* padding: 0;
+  margin: 0px; */
+  color: grey;
+}
+
+button{
+  padding: 10px 110px;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+  
+/* Control the left side */
+.left {
+  left: 0;
+  /* background-color: hsl(279, 6%, 55%); */
+  background-image: url('images/bg-main-desktop.png');
+  background-size: 100% 100%;
+  width: 460px;
+  color: white;
+}
+  
+/* Control the right side */
+.right {
+  right: 0;
+  width: 891px;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#box1{
+  margin: auto;
+  position: absolute;
+  top: 170px;
+  left: 140px;
+  z-index: 2;
+  padding: 100px 200px;
+  border-radius: 10px;
+  background-image: url(images/bg-card-front.png);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#logo{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#display-num, #display-date, #display-name{
+  position: relative;
+  right: 175px;
+  top: 40px;
+  padding: 0;
+  color: white;
+  /* border: 1px solid black; */
+}
+
+#display-num{
+  top: 30px;
+  width: 100%;
+}
+
+#display-name{
+  font-size: 15px;
+}
+
+#display-date{
+  right: 0px;
+  padding: 0px;
+  font-size: 15px;
+}
+
+#box2{
+  margin: auto;
+  position: absolute;
+  top: 440px;
+  left: 230px;
+  z-index: 2;
+  padding: 100px 200px;
+  background-image: url(images/bg-card-back.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+#box2>p{
+  position: relative;
+  left: 165px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+  color: white;
+  right: 10px;
+}
+
+#form{
+  height: 400px;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 12px;
+  width: 325px;
+}
+
+#holder-name, #card-num{
+  font-size: 15px;
+  border: 1px solid hsl(249, 99%, 64%);
+  padding: 5px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#exp-year, #exp-month{
+  position: relative;
+  right: 10px;
+  font-size: 15px;
+  border: 1px solid hsl(249, 99%, 64%);
+  padding: 5px 5px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+#cvc-num{
+  position: relative;
+  left: 5px;
+  font-size: 15px;
+  border: 1px solid hsl(249, 99%, 64%);
+  padding: 5px 5px;
+  width: 160px;
+  border-radius: 5px;
+}
+
+#holder-name:hover{
+  border: 1px solid hsl(278, 94%, 30%);
+}
+
+#card-num:hover{
+  border: 1px solid hsl(278, 94%, 30%);
+}
+
+#exp-year:hover{
+  border: 1px solid hsl(278, 94%, 30%);
+}
+
+#exp-month:hover{
+  border: 1px solid hsl(278, 94%, 30%);
+}
+
+#cvc-num:hover{
+  border: 1px solid hsl(278, 94%, 30%);
+}
+
+
+#holder_name, #holder_number{
+  position: absolute;
+  /* padding: 5px;
+  margin: 3px 0px; */
+  /* border: 1px solid blue; */
+  left: 12px;
+}
+
+#holder_date{
+  position: absolute;
+  left: 12px;
+}
+/* 
+#holder_cvc{
+  position: relative;
+  left: 15px;
+} */
+
+#btn{
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+footer{
+  position: relative;
+  top: 800px;
+  padding: 20px;
+  margin: 0;
+  background-color: yellow;
+  z-index: 3;
+} 
+
+.attribution>span{
+  font-size: 1rem;
+}
